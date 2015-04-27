@@ -1,0 +1,97 @@
+DROP SEQUENCE ACTIVE_EMPLOYEES_seq ; 
+create sequence ACTIVE_EMPLOYEES_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ACTIVE_EMPLOYEES_PK_trig 
+; 
+
+create or replace trigger ACTIVE_EMPLOYEES_PK_trig 
+before insert on ACTIVE_EMPLOYEES
+for each row 
+begin 
+select ACTIVE_EMPLOYEES_seq.nextval into :new.EMPLOYEE_ID from dual; 
+end; 
+/
+
+DROP SEQUENCE DOCUMENT_seq ; 
+create sequence DOCUMENT_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER DOCUMENT_PK_trig 
+; 
+
+create or replace trigger DOCUMENT_PK_trig 
+before insert on DOCUMENT
+for each row 
+begin 
+select DOCUMENT_seq.nextval into :new.DOCUMENT_ID from dual; 
+end; 
+/
+
+DROP SEQUENCE NL_MEMBERS_seq ; 
+create sequence NL_MEMBERS_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NL_MEMBERS_PK_trig 
+; 
+
+create or replace trigger NL_MEMBERS_PK_trig 
+before insert on NL_MEMBERS
+for each row 
+begin 
+select NL_MEMBERS_seq.nextval into :new.LIST_SEQ_ID from dual; 
+end; 
+/
+
+DROP SEQUENCE NOTICE_LISTS_seq ; 
+create sequence NOTICE_LISTS_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NOTICE_LISTS_PK_trig 
+; 
+
+create or replace trigger NOTICE_LISTS_PK_trig 
+before insert on NOTICE_LISTS
+for each row 
+begin 
+select NOTICE_LISTS_seq.nextval into :new.NOTICE_LIST_ID from dual; 
+end; 
+/
+
+DROP SEQUENCE User_seq ; 
+create sequence User_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER User_PK_trig 
+; 
+
+create or replace trigger User_PK_trig 
+before insert on User
+for each row 
+begin 
+select User_seq.nextval into :new.USER_ID from dual; 
+end; 
+/
+
+DROP INDEX User_USER_ID_FK_0 ;
+CREATE INDEX User_USER_ID_FK_0 ON ACTIVE_EMPLOYEES(User_USER_ID) ;
+DROP INDEX User_USER_ID_FK_1 ;
+CREATE INDEX User_USER_ID_FK_1 ON DOCUMENT(User_USER_ID) ;
+DROP INDEX ACTIVE_EMPLOYEES_EMPLO_FK_2 ;
+CREATE INDEX ACTIVE_EMPLOYEES_EMPLO_FK_2 ON NL_MEMBERS(ACTIVE_EMPLOYEES_EMPLOYEE_ID) ;
+DROP INDEX NOTICE_LISTS_NOTICE_LI_FK_3 ;
+CREATE INDEX NOTICE_LISTS_NOTICE_LI_FK_3 ON NL_MEMBERS(NOTICE_LISTS_NOTICE_LIST_ID) ;
+DROP INDEX NOTICE_LIST_FK_4 ;
+CREATE INDEX NOTICE_LIST_FK_4 ON NL_MEMBERS(NOTICE_LIST) ;
+DROP INDEX ACTIVE_EMPLOYEES_EMPLO_FK_5 ;
+CREATE INDEX ACTIVE_EMPLOYEES_EMPLO_FK_5 ON User(ACTIVE_EMPLOYEES_EMPLOYEE_ID) ;
