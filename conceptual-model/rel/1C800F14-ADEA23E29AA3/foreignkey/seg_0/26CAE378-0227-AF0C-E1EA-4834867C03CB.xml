@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="26CAE378-0227-AF0C-E1EA-4834867C03CB" name="ACTIVE_EMPLOYEES_User_FK">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:31 UTC</createdTime>
+<generatorID>F530059F-36C3-640F-A226-CBAA8D70C8A4</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<containerWithKeyObject>E1095671-ACF7-0910-98F6-9DD3F7742742</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>FE9236ED-F955-CB23-6548-E7B0F55DE3FB</localFKIndex>
+<keyObject>6E96B604-D140-0125-8763-0174D70A4B0D</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

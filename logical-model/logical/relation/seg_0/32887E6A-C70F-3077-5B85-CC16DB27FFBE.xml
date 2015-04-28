@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="User_to_Document" directorySegmentName="seg_0" id="32887E6A-C70F-3077-5B85-CC16DB27FFBE">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:08:43 UTC</createdTime>
+<ownerDesignName>logical-model</ownerDesignName>
+<engineerTo>
+<item key="1C800F14-F349-2E2E-3323-ADEA23E29AA3" value="true"/>
+</engineerTo>
+<sourcePk>91B972ED-71B8-FF3D-F052-7B1F964BFEB6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EC02FB5C-9855-C3FD-813C-0FAB61D6C0E8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>16EDC355-CB58-7B70-2333-F548393D8C0B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

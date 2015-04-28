@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1095671-ACF7-0910-98F6-9DD3F7742742" name="ACTIVE_EMPLOYEES">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>AD7A9FBB-4E98-7AA0-2CE1-F9B5DDEE0A93</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="C04520B7-D0F9-10AD-7134-3815DAC1F91C">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>3969BDE8-3049-A52E-5C1A-650524B9E4BC</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_NAME" id="824F5A4B-DC47-D012-7E50-2FA92C83A784">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>CB6A514C-87B9-187B-616C-9BADF30FDDE5</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_STATUS" id="8805EABC-CF50-46BE-DAEA-E89E250AF825">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>C9D85C6B-2944-252E-92C5-E7F02B19016F</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_EFF_DATE" id="04D813D4-315A-8E84-ED34-2FEB405C3311">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>71B0F71F-2760-3C12-0768-EC0447041823</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_LAB" id="A5391502-B780-EE02-C872-E893C26BFED6">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>31938AB0-4BE6-73D3-97BC-DCE25B7FD5A9</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_DIVISION" id="DA4B595B-C0B6-8D54-2D11-372EB059D122">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>9ED2B57E-7873-7C67-3B18-FFFC2D87B684</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="User_USER_ID" id="552A684E-FDA3-E102-5B59-D550F0AB7844">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>DA7A6D0E-F03C-3E1D-B51E-98CB715C4DEC</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>B40F9750-7BA5-5FD2-8C12-763932230259</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="26CAE378-0227-AF0C-E1EA-4834867C03CB" referredColumn="B40F9750-7BA5-5FD2-8C12-763932230259"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EA0625B7-BE75-EC0C-DBAF-7B2BD7E1FA87" name="ACTIVE_EMPLOYEES_PK">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>1C8FDCCB-1F72-BFA6-1A6E-44CBEB089783</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C04520B7-D0F9-10AD-7134-3815DAC1F91C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="553D8721-AD56-1EAF-A9A7-2B9A8FA2B4F6" name="ACTIVE_EMPLOYEES__IDX">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:31 UTC</createdTime>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F530059F-36C3-640F-A226-CBAA8D70C8A4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="552A684E-FDA3-E102-5B59-D550F0AB7844"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE9236ED-F955-CB23-6548-E7B0F55DE3FB" name="ACTIVE_EMPLOYEES_User_FK">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:31 UTC</createdTime>
+<generatorID>F530059F-36C3-640F-A226-CBAA8D70C8A4</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="552A684E-FDA3-E102-5B59-D550F0AB7844"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

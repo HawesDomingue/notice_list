@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AD7A9FBB-4E98-7AA0-2CE1-F9B5DDEE0A93" name="ACTIVE_EMPLOYEES">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 20:27:57 UTC</createdTime>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<engineerTo>
+<item key="1C800F14-F349-2E2E-3323-ADEA23E29AA3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EMPLOYEE_ID" id="3969BDE8-3049-A52E-5C1A-650524B9E4BC">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 20:29:04 UTC</createdTime>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<engineerTo>
+<item key="1C800F14-F349-2E2E-3323-ADEA23E29AA3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="EMPLOYEE_NAME" id="CB6A514C-87B9-187B-616C-9BADF30FDDE5">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 20:29:22 UTC</createdTime>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<engineerTo>
+<item key="1C800F14-F349-2E2E-3323-ADEA23E29AA3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="EMPLOYEE_STATUS" id="C9D85C6B-2944-252E-92C5-E7F02B19016F">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 20:29:53 UTC</createdTime>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<engineerTo>
+<item key="1C800F14-F349-2E2E-3323-ADEA23E29AA3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="STATUS_EFF_DATE" id="71B0F71F-2760-3C12-0768-EC0447041823">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 20:30:17 UTC</createdTime>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<engineerTo>
+<item key="1C800F14-F349-2E2E-3323-ADEA23E29AA3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="EMPLOYEE_LAB" id="31938AB0-4BE6-73D3-97BC-DCE25B7FD5A9">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 20:30:50 UTC</createdTime>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<engineerTo>
+<item key="1C800F14-F349-2E2E-3323-ADEA23E29AA3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="EMPLOYEE_DIVISION" id="9ED2B57E-7873-7C67-3B18-FFFC2D87B684">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 20:31:07 UTC</createdTime>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<engineerTo>
+<item key="1C800F14-F349-2E2E-3323-ADEA23E29AA3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="USER_ID" id="DA7A6D0E-F03C-3E1D-B51E-98CB715C4DEC">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:08:15 UTC</createdTime>
+<generatorID>F530059F-36C3-640F-A226-CBAA8D70C8A4</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<engineerTo>
+<item key="1C800F14-F349-2E2E-3323-ADEA23E29AA3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>FFB7360D-0C33-18D7-2554-8AB6E3AF1E28</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1C8FDCCB-1F72-BFA6-1A6E-44CBEB089783" name="{entity} PK">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 20:29:19 UTC</createdTime>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<engineerTo>
+<item key="1C800F14-F349-2E2E-3323-ADEA23E29AA3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3969BDE8-3049-A52E-5C1A-650524B9E4BC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

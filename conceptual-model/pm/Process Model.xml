@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="A3961215-6421-FC03-0C59-A9BB557DE77F">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 20:26:26 UTC</createdTime>
+<ownerDesignName>logical-model</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5E18207-4E94-E428-8D89-469A307AF40D" name="User">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>EC02FB5C-9855-C3FD-813C-0FAB61D6C0E8</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="B40F9750-7BA5-5FD2-8C12-763932230259">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>FFB7360D-0C33-18D7-2554-8AB6E3AF1E28</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ADMIN" id="265D0E61-8606-FDC7-A758-05813534934E">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>5C18C6FF-BC07-5C59-D905-116273897A0E</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APEX_USER" id="56FA980B-F107-DCB2-E8FB-532B67AF1B9C">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>FAAC6D75-4337-8D3B-0DF7-0FE2E3AF811B</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVE_EMPLOYEES_EMPLOYEE_ID" id="4B3AFC0B-0AE4-07EF-F153-9EAE188049D2">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>7359306B-BA2A-1AD8-2B68-8992C9AF0F28</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>C04520B7-D0F9-10AD-7134-3815DAC1F91C</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55485A56-E2E6-CEBF-5377-2EF5ABB81106" referredColumn="C04520B7-D0F9-10AD-7134-3815DAC1F91C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E96B604-D140-0125-8763-0174D70A4B0D" name="User_PK">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>91B972ED-71B8-FF3D-F052-7B1F964BFEB6</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B40F9750-7BA5-5FD2-8C12-763932230259"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7DE9818-D9A6-5158-DD10-BA56A69B634F" name="User__IDX">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:31 UTC</createdTime>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F530059F-36C3-640F-A226-CBAA8D70C8A4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4B3AFC0B-0AE4-07EF-F153-9EAE188049D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69A63218-541D-1C36-64BE-AADF95A4AB7A" name="User_ACTIVE_EMPLOYEES_FK">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>F530059F-36C3-640F-A226-CBAA8D70C8A4</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B3AFC0B-0AE4-07EF-F153-9EAE188049D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

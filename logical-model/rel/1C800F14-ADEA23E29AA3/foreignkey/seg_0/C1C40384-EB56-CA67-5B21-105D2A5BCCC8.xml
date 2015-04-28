@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C1C40384-EB56-CA67-5B21-105D2A5BCCC8" name="NL_MEMBERS_NOTICE_LISTS_FKv1">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:31 UTC</createdTime>
+<generatorID>4896FDDF-BA6A-38D8-4C86-6FB4171544E9</generatorID>
+<ownerDesignName>logical-model</ownerDesignName>
+<containerWithKeyObject>A2E78A9F-EF6D-14F1-B591-899CB09C5AD3</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>BB725081-A32A-C163-C536-CE85A398251D</localFKIndex>
+<keyObject>D11DF537-C6D3-FA93-8328-7DA8AFD66CCA</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

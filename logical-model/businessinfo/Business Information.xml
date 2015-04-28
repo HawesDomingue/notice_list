@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="5B313454-4CAB-E75D-B744-556D6795DBB3">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 20:26:27 UTC</createdTime>
+<ownerDesignName>logical-model</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

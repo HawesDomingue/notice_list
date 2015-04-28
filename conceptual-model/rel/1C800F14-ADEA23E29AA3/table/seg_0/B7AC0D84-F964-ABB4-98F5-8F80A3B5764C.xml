@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7AC0D84-F964-ABB4-98F5-8F80A3B5764C" name="NOTICE_LISTS">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>8094FC55-6D91-19DB-2CB0-22AA1E90A4C6</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NOTICE_LIST_ID" id="8C4422D2-8107-96F6-AC79-A1EEC992CA97">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>781BD747-385F-236A-B1D0-DC02B218B1DE</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LIST_NAME" id="EF948A52-E7C8-A9C9-FC16-C9A273E9ED7A">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>2DB0677B-4D8E-E5B4-8C08-26A54A2A8728</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OWNERSHIP_DIV_CODE" id="E55F6913-6D40-C2E5-182E-0F1B800598D3">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>CC4195D3-3A78-4544-98FE-2534DFEFF5D8</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LIST_DESCRIPTION" id="79DDDA45-7A87-CDEF-8A9B-966FB8D54F80">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>E4D93CD2-A614-F59A-3226-FEF7F4585CE3</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3500</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXTERNAL_VIEW_NAME" id="5A20459D-7055-57FD-B205-C53206A6B992">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>926BB047-9564-4A3C-9E0D-DA6426E81F25</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LIST_STATUS" id="5CCAB35A-66F9-65B0-09CE-AFD5396CA99E">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>BD5BBD8C-CE9A-7052-5DBF-D5C6413DF3FF</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_EFF_DATE" id="F94A948F-1245-CDED-4721-58A0504193FA">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>B4CE0D2F-D53D-9201-F4E4-CFC2BCBFF98E</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D11DF537-C6D3-FA93-8328-7DA8AFD66CCA" name="NOTICE_LISTS_PK">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 21:58:30 UTC</createdTime>
+<generatorID>9D3169CF-5527-A20A-EEF7-DED0514A9747</generatorID>
+<ownerDesignName>conceptual-model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C4422D2-8107-96F6-AC79-A1EEC992CA97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

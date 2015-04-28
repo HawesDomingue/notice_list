@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="83C99118-CFA9-9F13-B08B-3F45E74473BA" mainViewID="6E6631E0-06A3-E455-89CF-BA242F0F3B55">
+<createdBy>Wedge</createdBy>
+<createdTime>2015-04-27 20:26:25 UTC</createdTime>
+<ownerDesignName>logical-model</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
