@@ -5,7 +5,9 @@ Authors:	K.C. Hawes-Domingue (EID: kh549) and Kahli Holmes (EID: kh27624)
 			
 Disclaimer: This application was created for educational purposes for a course at The University of Texas at Austin.
 
-Instructions for Setup:
+Testing the pre-made application: Go to https://apex.oracle.com/pls/apex/f?p=33240 in your web browser. To test the application with admin user authorization, use guest_admin/password for the login page. To test with standard user authorization, use guest_user/password.
+
+Instructions for Installation:
 1) Create tables, sequences, and triggers:   From your Oracle ApEx workspace, go to the SQL Workshop > SQL Scripts. Upload all files in the ddl files folder and then run them in order (arl.ddl, arl.ddl2, arl.ddl3, arl.ddl4).
 2) Insert some test data:   Go to the SQL Workshop menu > SQL Commands. Copy-paste the SQL code from data.sql into the text field and click Run. You should get a message that the command executed successfully.
 3) Upload the application:   From the Application Builder, choose Import. Select the file called apex-app-with-object-definitions.sql. Leave File Type as "Database Application, Page or Component Export". Click Next, then Next to confirm. Leave settings at defaults and choose "Install Application". Leave "Install Supporting Objects" selected and click Next, then Install. Select "Run Application" to begin using the application, or "Edit Application" if you would like to add additional users or make changes.
