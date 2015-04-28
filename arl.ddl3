@@ -166,20 +166,20 @@ nomaxvalue
 ;
 
 create or replace trigger User_PK_trig 
-before insert on User
+before insert on "User"
 for each row 
 begin 
 select User_seq.nextval into :new.USER_ID from dual; 
 end; 
 /
-alter table User add created date ; 
-alter table User add created_by VARCHAR2 (255) ; 
-alter table User add row_version_number integer ; 
-alter table User add updated date ; 
-alter table User add updated_by VARCHAR2 (255) ; 
+alter table "User" add created date ; 
+alter table "User" add created_by VARCHAR2 (255) ; 
+alter table "User" add row_version_number integer ; 
+alter table "User" add updated date ; 
+alter table "User" add updated_by VARCHAR2 (255) ; 
 /
 create or replace trigger User_AUD_trig 
-before insert or update on User 
+before insert or update on "User"
 for each row 
 begin 
   if inserting then 
@@ -209,4 +209,4 @@ CREATE INDEX NOTICE_LISTS_NOTICE_LI_FK_3 ON NL_MEMBERS(NOTICE_LISTS_NOTICE_LIST_
 DROP INDEX NOTICE_LIST_FK_4 ;
 CREATE INDEX NOTICE_LIST_FK_4 ON NL_MEMBERS(NOTICE_LIST) ;
 DROP INDEX ACTIVE_EMPLOYEES_EMPLO_FK_5 ;
-CREATE INDEX ACTIVE_EMPLOYEES_EMPLO_FK_5 ON User(ACTIVE_EMPLOYEES_EMPLOYEE_ID) ;
+CREATE INDEX ACTIVE_EMPLOYEES_EMPLO_FK_5 ON "User"(ACTIVE_EMPLOYEES_EMPLOYEE_ID) ;

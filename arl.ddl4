@@ -1,0 +1,6 @@
+drop view lab_div;
+
+create view lab_div as
+select employee_lab, employee_division
+from active_employees;
+
